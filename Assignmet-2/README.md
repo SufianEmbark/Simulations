@@ -42,7 +42,7 @@ Console → Prints a summary of parameters at the start and results at the end.
 File → Detailed logs and metrics are saved in `simulation_output.txt`.  
 
 Example console output:
-
+```
 === Simulation start ===  
 Parameters: P=3, R=3, OP=1, sim_time=10000, monitor_dt=1.0, seed=123  
 Distributions: interarrival=25, prep=40, op=20, rec=40 (exponential)  
@@ -55,7 +55,7 @@ Simulation results (baseline exponential):
 - avg_throughput_time: 218.7469  
 - avg_prep_queue_length: 0.3625  
 (All logs and details are saved in simulation_output.txt)  
-
+```
 ---
 
 ## Requirements
