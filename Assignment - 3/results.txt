@@ -1,0 +1,65 @@
+=== Independent experiments (different seeds) ===
+
+--- Config 3P4R ---
+P(block OR): mean=0.0000, 95%CI=(0.0000,0.0000)
+ relative half-width = n/a (mean=0)
+avg queue before prep: mean=0.2361, 95%CI=(0.1202,0.3520)
+ relative half-width = 49.08%
+avg idle capacity in prep: mean=1.3803, 95%CI=(1.1797,1.5810)
+ relative half-width = 14.53%
+P(all recovery busy): mean=0.0157, 95%CI=(0.0029,0.0285)
+ relative half-width = 81.76%
+
+--- Config 3P5R ---
+P(block OR): mean=0.0000, 95%CI=(0.0000,0.0000)
+ relative half-width = n/a (mean=0)
+avg queue before prep: mean=0.3225, 95%CI=(0.1743,0.4707)
+ relative half-width = 45.95%
+avg idle capacity in prep: mean=1.3247, 95%CI=(1.2114,1.4380)
+ relative half-width = 8.55%
+P(all recovery busy): mean=0.0077, 95%CI=(0.0016,0.0138)
+ relative half-width = 78.64%
+
+--- Config 4P5R ---
+P(block OR): mean=0.0000, 95%CI=(0.0000,0.0000)
+ relative half-width = n/a (mean=0)
+avg queue before prep: mean=0.0285, 95%CI=(0.0107,0.0463)
+ relative half-width = 62.32%
+avg idle capacity in prep: mean=2.4915, 95%CI=(2.3503,2.6328)
+ relative half-width = 5.67%
+P(all recovery busy): mean=0.0074, 95%CI=(0.0010,0.0138)
+ relative half-width = 86.71%
+
+
+=== Experiments with Common Random Numbers (CRN) ===
+
+--- Differences in P(block OR) ---
+3P5R - 4P5R (block): mean diff=0.000000, 95%CI=(0.000000,0.000000)
+3P5R - 3P4R (block): mean diff=0.000000, 95%CI=(0.000000,0.000000)
+
+--- Differences in avg queue before prep ---
+3P5R - 4P5R (q_prep): mean diff=0.203950, 95%CI=(0.097316,0.310584)
+3P5R - 3P4R (q_prep): mean diff=0.000000, 95%CI=(0.000000,0.000000)
+
+
+=== Comparison of CI widths: blocking OR vs all recovery busy ===
+
+Config 3P4R:
+ P(block OR): mean=0.000000, half=0.000000, relative half-width=n/a
+ P(all recovery busy): mean=0.009822, half=0.007235, relative half-width=73.66%
+
+Config 3P5R:
+ P(block OR): mean=0.000000, half=0.000000, relative half-width=n/a
+ P(all recovery busy): mean=0.008448, half=0.006623, relative half-width=78.40%
+
+Config 4P5R:
+ P(block OR): mean=0.000000, half=0.000000, relative half-width=n/a
+ P(all recovery busy): mean=0.007290, half=0.007405, relative half-width=101.57%
+
+
+=== Twisted scenario: same expected OR utilization (3P5R) ===
+
+Differences (twisted - original) for 3P5R:
+P(block OR): mean diff=0.000000, 95%CI=(0.000000,0.000000)
+avg queue before prep: mean diff=-0.060300, 95%CI=(-0.101449,-0.019151)
+P(all recovery busy): mean diff=0.000633, 95%CI=(-0.006685,0.007951)
