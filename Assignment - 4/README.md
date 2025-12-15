@@ -101,3 +101,7 @@ analysis.py → Experiment definitions, factorial design, regression model
 main.py → Entry point, sets up logging and runs experiments
 results.txt → Experiment results
 simulation.log → Detailed logs
+
+Additionally, the written analysis for Assignment 4 is provided in the file:
+Analysis.pdf
+This document contains the full explanation of the serial correlation study, the 2^4 factorial design, the regression metamodel, and the conclusions.
